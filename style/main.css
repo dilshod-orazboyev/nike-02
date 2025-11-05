@@ -1,0 +1,246 @@
+@import url(./font.css);
+
+
+:root {
+    --RR: 'Roboto-Regular';
+    --RB: 'Roboto-Bold';
+    --light: #fff;
+    --gold: #D57300;
+    --dark: #322E41;
+    --violet: #544294;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+/**************************************************** header started *******************************************/
+
+.page__header {
+    background-color: var(--dark);
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__link {
+    color: var(--light);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0%;
+    padding: 23px 14px;
+    transition: .4s;
+}
+
+.nav__link:hover {
+    background-color: var(--light);
+    color: var(--gold);
+}
+
+/************************************ header section finished *****************************************/
+
+
+/*********************************** banner section started *******************************************/
+
+.banner {
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    color: var(--light);
+}
+
+.banner__title {
+    font-family: var(--RB);
+    font-size: 50px;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.banner__text {
+    color: var(--light);
+    font-family: var(--RB);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/*************************************** banner section finished ************************************/
+
+/*************************************** category section started ***********************************/
+
+.category {
+    background-color: #efebeb;
+}
+
+.category__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    transform: translateY(-45px);
+}
+
+.category__item {
+    background-color: var(--light);
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.category__item:nth-of-type(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+
+
+.main__title {
+    color: var(--dark);
+    font-family: var(--RB);
+    font-size: 22px;
+    line-height: 26px;
+    margin: 20px 0 10px;
+    text-align: left !important;
+}
+
+.item__text:nth-of-type(1) {
+    color: rgba(155, 155, 155, 1);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.item__img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: 0 auto;
+}
+
+.first__img {
+    width: 100%;
+    height: 263px;
+}
+
+.item__title {
+    text-align: center;
+    color: --dark;
+    font-family: var(--RB);
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+/*************************************** category section finished ***********************************/
+
+/************************************** footer section started **************************************/
+
+.page__footer {
+    background-color: var(--dark);
+    padding: 47px 0;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    gap: 11px;
+}
+
+.form__input,
+.form__textarea {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+}
+
+.form__input:focus,
+.form__textarea {
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(155, 155, 155, 1);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 13px;
+}
+
+.form__btn {
+    padding: 6px 0;
+    background-color: var(--violet);
+    color: var(--light);
+    color: rgba(255, 255, 255, 1);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 13px;
+    border: none;
+    border-radius: 6px;
+}
+
+.form__textarea {
+    resize: none;
+}
+
+
+.footer__nav {
+    width: 237px;
+    height: 106px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer__nav-link {
+    color: var(--light);
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 19px;
+    transition: .3s;
+}
+
+.footer__nav-link:hover {
+    color: var(--gold);
+}
+
+.social__media {
+    display: flex;
+    gap: 15px;
+}
+
+/************************************** footer section finished **************************************/
