@@ -243,4 +243,69 @@
     gap: 15px;
 }
 
+
+
+.burgar__menu {
+    width: 30px;
+    height: 21px;
+    background-color:transparent;
+    border: none;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger__menu>span {
+    width: 100%;
+    height: 2px;
+    border-color: var(--light);
+}
+
 /************************************** footer section finished **************************************/
+
+
+@media(max-width:820px) {
+    .page__header {
+        padding-block: 4px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .burger__menu {
+        display: flex;
+    }
+}
+
+
+@media(max-width:500px) {
+    .banner {
+        height:450px;
+        gap: 10px;
+    }
+
+    .banner__title {
+        font-size: 45px;
+        line-height: 100%;
+    }
+
+    .banner__text {
+        font-size: 16px;
+    }
+}
+
+@media(max-width) {
+    .logo__img {
+        width: 600px;
+    }
+
+    .banner {
+        height: 400px;
+    }
+}
+
+
+
+
+
